@@ -7,7 +7,7 @@ function App() {
   const [filter, setFilter] = useState("ALL");
   const [sourceFilter, setSourceFilter] = useState("ALL");
 
-  const API_URL = "http://127.0.0.1:8000/api";
+  const API_URL = "https://breathe-esg-dashboard-ladm.onrender.com/api";
 
   const fetchRecords = async () => {
     try {
