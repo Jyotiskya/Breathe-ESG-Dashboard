@@ -1,0 +1,5 @@
+source_type,category,quantity,unit
+SAP,Fuel,500,liters
+UTILITY,Electricity,2000,kWh
+TRAVEL,Flight,-100,km
+SAP,Diesel,15000,liters
