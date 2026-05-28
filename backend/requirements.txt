@@ -1,5 +1,4 @@
 gunicorn==22.0.0
-whitenoise==6.7.0
 python-dotenv==1.0.1
 certifi==2026.5.20
 charset-normalizer==3.4.7
