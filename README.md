@@ -1,4 +1,4 @@
-        # Breathe ESG — Emissions Ingestion Prototype
+# Breathe ESG — Emissions Ingestion Prototype
 
 A Django REST + React prototype for ingesting, normalising, and reviewing emissions data from three enterprise source types: SAP fuel/procurement exports, utility electricity billing CSVs, and corporate travel platform exports.
 
@@ -67,7 +67,7 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
-Backend runs at `http://127.0.0.1:8000`
+Backend runs at `https://breathe-esg-dashboard-ladm.onrender.com`
 
 ### Frontend
 
@@ -149,16 +149,6 @@ Scope: **2** (purchased electricity, location-based)
 ### Travel
 Format modelled on SAP Concur expense export. Distance derived from airport code lookup for routes where `distance_km` is not populated. Business class applies 2× economy emission factor per DEFRA 2023 methodology.
 
-Emission factors (DEFRA 2023):
-- Flight economy: 0.255 kgCO₂e/km
-- Flight business: 0.510 kgCO₂e/km
-- Hotel: 31.2 kgCO₂e/night
-- Ground (taxi/rideshare): 3.5 kgCO₂e/trip
-- Ground (rail): 1.2 kgCO₂e/trip
-- Ground (car rental): 8.0 kgCO₂e/trip
-
-Scope: **3** (business travel, Category 6)
-
 ---
 
 ## Suspicious flag logic
@@ -184,17 +174,17 @@ Current rules:
 
 ## Deployment
 
-The app is deployed at: **[your-deployed-url-here]**
+The app is deployed at: **[https://breathe-esg-dashboard-ladm.onrender.com]**
 
-Login credentials: `jyoti / admin` (if superuser was created)
+Login credentials: `jyoti` 
 
 Deployed on [Render].
 
 For deployment, set these environment variables:
 ```
-DJANGO_SECRET_KEY=your-secret-key
+DJANGO_SECRET_KEY=secret-key
 DEBUG=False
-ALLOWED_HOSTS=your-domain.com
+ALLOWED_HOSTS=https://breathe-esg-dashboard-ladm.onrender.com
 ```
 
 ---
